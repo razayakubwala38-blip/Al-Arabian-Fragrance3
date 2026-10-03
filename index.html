@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#3b1712">
+<meta name="description" content="Al Arabian Fragrance — premium attars and perfumes.">
+<title>Al Arabian™ Fragrance | Attars & Perfumes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="announcement">FREE SHIPPING ON SELECT ORDERS <span>•</span> AUTHENTIC ARABIAN FRAGRANCE</div>
+
+<header class="nav">
+  <a class="brand" href="#home" aria-label="Al Arabian Fragrance home">
+    <span class="brand-mark">AE</span>
+    <span><b>Al Arabian</b><small>FRAGRANCE</small></span>
+  </a>
+  <nav>
+    <a href="#home">Home</a><a href="#attars">Attars</a><a href="#perfumes">Perfumes</a>
+    <a href="#best">Best Sellers</a><a href="#about">About Us</a><a href="#contact">Contact</a>
+  </nav>
+  <button class="cart-btn" id="cartBtn">Bag <span id="cartCount">0</span></button>
+  <button class="menu" id="menuBtn">☰</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <p class="eyebrow">PURE FRAGRANCE · TIMELESS ELEGANCE</p>
+    <h1>Wear the <em>essence</em><br>of Arabia.</h1>
+    <p class="lead">Discover refined attars and perfumes crafted for presence, memory and everyday luxury.</p>
+    <div class="hero-actions">
+      <a class="btn gold" href="#best">SHOP COLLECTION <span>↗</span></a>
+      <a class="text-link" href="#about">Our story <span>→</span></a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-glow"></div>
+    <div class="hero-card tilt" data-tilt>
+      <img src="assets/oud-asva.png" alt="Oud Asva by Al Arabian Fragrance">
+      <div class="hero-badge">SIGNATURE<br><strong>OUD ASVA</strong></div>
+    </div>
+    <div class="floating-note note-one">LONG LASTING</div>
+    <div class="floating-note note-two">12 ML · ATTAR</div>
+  </div>
+</section>
+
+<section class="trust">
+  <div><span>✦</span><strong>Long Lasting</strong><small>Rich fragrance profile</small></div>
+  <div><span>◈</span><strong>Arabian Essence</strong><small>Inspired by tradition</small></div>
+  <div><span>✧</span><strong>Premium Finish</strong><small>Made for gifting</small></div>
+  <div><span>✓</span><strong>Easy Ordering</strong><small>WhatsApp support</small></div>
+</section>
+
+<section class="intro" id="attars">
+  <div><p class="eyebrow">THE COLLECTION</p><h2>Fragrance, <em>reimagined.</em></h2></div>
+  <p>From deep oud and warm mukhalat to soft musk and luminous perfume, each bottle is presented as a modern expression of Arabian luxury.</p>
+</section>
+
+<section class="collection" id="best">
+  <div class="section-head"><div><p class="eyebrow">CUSTOMER FAVOURITES</p><h2>Best Sellers</h2></div><div class="filter-row"><button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Attars">Attars</button><button class="filter" data-filter="Perfumes">Perfumes</button></div></div>
+  <div class="grid" id="productGrid"></div>
+</section>
+
+<section class="feature" id="perfumes">
+  <div class="feature-image tilt" data-tilt><img src="assets/royal-fresh.png" alt="Royal Fresh perfume"></div>
+  <div class="feature-copy">
+    <p class="eyebrow">THE SIGNATURE PERFUME</p>
+    <h2>Royal Fresh</h2>
+    <p>A crisp, polished Eau de Parfum presentation designed for a confident everyday signature.</p>
+    <div class="price"><strong>₹899</strong><s>₹1,299</s><span>31% OFF</span></div>
+    <button class="btn dark" onclick="addToCartByName('Royal Fresh')">ADD TO BAG <span>+</span></button>
+  </div>
+</section>
+
+<section class="offer">
+  <div class="offer-orb"></div>
+  <p class="eyebrow">ARABIAN VALUE</p>
+  <h2>Get 3 Attars at <em>₹899</em></h2>
+  <p>Build your own fragrance wardrobe with three selected attars.</p>
+  <a class="btn light" href="#attars">SHOP ATTARS <span>↗</span></a>
+</section>
+
+<section class="about" id="about">
+  <div><p class="eyebrow">WHY AL ARABIAN</p><h2>Luxury should feel<br><em>personal.</em></h2></div>
+  <div class="about-copy"><p>Al Arabian Fragrance brings together classic Arabian fragrance culture and a contemporary luxury presentation. Our collection is designed to make every first impression memorable.</p><div class="stats"><div><b>10</b><span>Signature products</span></div><div><b>100%</b><span>Luxury presentation</span></div><div><b>24/7</b><span>Order enquiries</span></div></div></div>
+</section>
+
+<section class="contact" id="contact">
+  <p class="eyebrow">VISIT / CONNECT</p><h2>Find your signature.</h2>
+  <p>Panigate, Mandvi Road, Opposite City Police Station,<br>Gayakwad Plaza B-6, Vadodara, Gujarat, India</p>
+  <a class="btn gold" href="https://wa.me/917041497806" target="_blank" rel="noopener">CHAT ON WHATSAPP <span>↗</span></a>
+</section>
+</main>
+
+<footer><div class="footer-brand"><span class="brand-mark">AE</span><b>Al Arabian™ Fragrance</b><small>Attars & Perfumes</small></div><div class="footer-links"><a href="#home">Home</a><a href="#attars">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></div><p>© 2026 Al Arabian Fragrance. All rights reserved.</p></footer>
+
+<div class="cart-drawer" id="cartDrawer">
+  <div class="drawer-head"><h3>Your Bag</h3><button id="closeCart">×</button></div>
+  <div id="cartItems"></div>
+  <div class="drawer-foot"><div><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="btn dark full" id="checkoutBtn">ORDER ON WHATSAPP ↗</button></div>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<script>window.PRODUCTS = [{"name": "Oud Asva", "cat": "Attars", "size": "12 ML", "price": 399, "mrp": 599, "img": "oud-asva.png", "tag": "Signature Oud"}, {"name": "Mushk E Taha", "cat": "Attars", "size": "12 ML", "price": 399, "mrp": 599, "img": "mushk-e-taha.png", "tag": "Musk"}, {"name": "Shanaya", "cat": "Attars", "size": "10 ML", "price": 399, "mrp": 599, "img": "shanaya.png", "tag": "Floral"}, {"name": "Arabi Mukhalat", "cat": "Attars", "size": "12 ML", "price": 399, "mrp": 599, "img": "arabi-mukhalat.png", "tag": "Arabian Blend"}, {"name": "Arabian Night", "cat": "Attars", "size": "12 ML", "price": 399, "mrp": 599, "img": "arabian-night.png", "tag": "Night"}, {"name": "Mushk E Hadi", "cat": "Attars", "size": "10 ML", "price": 399, "mrp": 599, "img": "mushk-e-hadi.png", "tag": "Soft Musk"}, {"name": "Secret Romantic", "cat": "Attars", "size": "12 ML", "price": 399, "mrp": 599, "img": "secret-romantic.png", "tag": "Romantic"}, {"name": "Al Ridan", "cat": "Attars", "size": "12 ML", "price": 399, "mrp": 599, "img": "al-ridan.png", "tag": "Saffron"}, {"name": "White Gold 360", "cat": "Perfumes", "size": "50 ML", "price": 899, "mrp": 1299, "img": "white-gold-360.png", "tag": "Eau de Parfum"}, {"name": "Royal Fresh", "cat": "Perfumes", "size": "60 ML", "price": 899, "mrp": 1299, "img": "royal-fresh.png", "tag": "Eau de Parfum"}];</script>
+<script src="script.js"></script>
+</body></html>
